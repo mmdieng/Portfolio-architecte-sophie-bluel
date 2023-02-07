@@ -1,0 +1,82 @@
+#nav-filtres{
+    padding-bottom: 2em;
+    margin: 3em 0 3em 0;
+  }
+  .ul-icons{
+    width: 70%;
+    margin: auto;
+    font-size: 1.5vw;
+  }
+  
+  .li-icons a{
+    text-decoration:none;
+    color: #1D6154;
+    padding: 0.2em;
+    border:0.12em solid #1D6154;
+    border-radius: 1em;
+  }
+  
+  .li-icons a:hover{
+    background-color: #1D6154;
+    color: white;
+  }
+  .login{
+    width: 300px;
+    margin: auto;
+  }
+  #id-form-connexion{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 2em;
+    background-color: #fffef8;
+  }
+  #id-form-connexion div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  #id-form-connexion div input {
+    height: 2.5em;
+    border: #f5f4ef solid 2px;
+    box-shadow: 0px 4px 4px 0px #f5f4ef;
+    
+    }
+    #id-form-connexion  div button {
+      width: 12em;
+      height: 2em;
+      border-radius: 5em;
+      border: 0px;
+      margin: auto;
+      background-color : #1D6154;;
+      color: white;
+    }
+    #id-form-connexion  div a {
+      margin: auto;
+      color: black;
+    }
+    .erreur{
+      color: red;
+    }
+    #erreur-login{
+      display: none;
+    }
+    #id-modif-img{
+      margin: auto;
+      padding-top: 1em;
+      width: 80%;
+    }
+    .a-modifier{
+      //display: none;
+      text-decoration: none;
+      color: black;
+    }
+    #id-div-mesprojets{
+      display: flex;
+      width: 400px;
+      margin: auto;
+      gap:2em;
+    }
+    #id-modif-img2{
+      padding-top: 0.6em;
+    }
