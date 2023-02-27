@@ -1,3 +1,4 @@
+document.querySelector("#li-login").setAttribute("style", "font-weight: bolder;");
 const btnSubmit=document.querySelector("#btn-submit");
 btnSubmit.addEventListener("click",async function (event) {
     event.preventDefault();
@@ -17,7 +18,9 @@ btnSubmit.addEventListener("click",async function (event) {
     // Récupération de la reponse
     if(reponse.ok){
         document.querySelector("#erreur-login").style.display = "none";
-        //const rep = await reponse.json();
+        const rep = await reponse.json();
+        window.localStorage.setItem("userId",rep.userId);
+        window.localStorage.setItem("token",rep.token);
         document.location.href='http://127.0.0.1:5500/FrontEnd/#';
     }else{
         document.querySelector("#erreur-login").style.display = "block";

@@ -8,21 +8,37 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="./assets/style.css">
+	<!-- Ne peut pas obtenir un nouveau kit code sur Font Awesome -->
+	<!-- our project just needs Font Awesome Solid + Brands -->
+	<!--link href="./assets/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+	<link href="./assets/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+	<link href="./assets/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet"-->
 
-	<!-- Obtension d'un kit code sur Font Awesome -->
-	<script src="https://kit.fontawesome.com/d7cf733566.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/392462428a.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="stylesheet" href="./assets/style2.css">
 	<link rel="stylesheet" href="./assets/modal.css">
 </head>
 <body>
 <header>
+	<div id="div-entete">
+		<ul>
+			<li>
+				<a href="#" id="a-edition" class="a-entete"><i class="fa-regular fa-pen-to-square"></i>&ensp;Mode édition</a>
+			</li>
+			<li>
+				<a href="#" id="a-pub-change" class="a-entete">Publier les changements</a>
+			</li>
+		</ul>
+	</div>
 	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 	<nav>
 		<ul>
-			<li>projets</li>
-			<li>contact</li>
-			<li>login</li>
+			<li><a href="#id-div-mesprojets" class="a-menu-entete">projets</a></li>
+			<li><a href="#contact" class="a-menu-entete">contact</a></li>
+			<li id="li-login"><a href="connexion.html" class="a-menu-entete">login</a></li>
+			<li id="li-logout"><a href="#" class="a-menu-entete">logout</a></li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -31,10 +47,10 @@
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
-			<div id="id-modif-img"><a href="#" class="a-modifier"><i class="fa-thin fa-pen-to-square"></i>&ensp;Modifier</a></div>
+			<div id="id-modif-img"><a href="#" class="a-modifier"><i class="fa-regular fa-pen-to-square"></i>&ensp;Modifier</a></div>
 		</figure>
 		<article>
-			<div id=""><a href="#" class="a-modifier"><i class="fa-thin fa-pen-to-square"></i>&ensp;Modifier</a></div>
+			<div id=""><a href="#" class="a-modifier"><i class="fa-regular fa-pen-to-square"></i>&ensp;Modifier</a></div>
 			<h2>Designer d'espace</h2>
 			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
 			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
@@ -44,7 +60,7 @@
 	<section id="portfolio">
 		<div id="id-div-mesprojets">
 			<h2>Mes Projets</h2>
-			<div id="id-modif-img2"><a href="#modal1" class="a-modifier js-modal"><i class="fa-thin fa-pen-to-square"></i>&ensp;Modifier</a></div>
+			<div id="id-modif-img2"><a href="#modal1" class="a-modifier js-modal"><i class="fa-regular fa-pen-to-square" href="#modal1"></i>&ensp;Modifier</a></div>
 		</div>
 		<nav id="nav-filtres">
 			<ul class="ul-icons">
@@ -59,15 +75,63 @@
 	</section>
 	<!********************************>
 	<aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="title-modal" style="display: none;">
-        <div class="modal-wrapper js-modal-stoppropagation">
-            <div id="div-fermer-modal">
+        <div id="modal-wrapper1" class="modal-wrapper js-modal-stoppropagation">
+            <div class="div-fermer-modal">
                 <button class="js-modal-close">&#10006;</button>
             </div>
-            <h3 id="title-modal">Galery photo</h3>
-            <div class="gallery">
+            <h3 class="title-modal">Galery photo</h3>
+            <div class="gallery-modal">
 
             </div>
+			<br>
+			<hr style="height: 1px; color: #c6c6c6; background-color: #c6c6c6; width: 100%; border: none;">
+			<br>
+			<div class="div-bas-modal">
+				<a href="#" id = "a-ajout-photo" categorie="0"> &emsp;Ajouter une photo &emsp;</a>
+			</div>
+			<div class="div-bas-modal">
+				<a href="#" id = "a-supp-gallery" categorie="0">Supprimer la gallery</a>
+			</div>
         </div>
+
+		<div id="modal-wrapper2" class="modal-wrapper js-modal-stoppropagation">
+            <div class="div-fermer-modal">
+				<button class="js-modal-fleche-g">&#8592;</button>
+                <button class="js-modal-close">&#10006;</button>
+            </div>
+            <h3 class="title-modal">Ajout photo</h3>
+            <div class="gallery-modal2">
+				<div id="div-ajout-img1" class="div-ajout-img">
+					<img id="image-loader" src="./assets/images/bar-lullaby-paris.png" alt="image-loader" class="image-form-ajout">
+				</div>
+				<div id="div-ajout-img2" class="div-ajout-img">
+					<span><i class="fa-solid fa-image" style="font-size: 5em;color: #b9c5cc;"></i></span>
+					<a href="#" id="a-form-ajout-photo">&emsp;&emsp;+Ajouter photo&emsp;&emsp;</a>
+					<div id="id-div-jpg-png">jpg, png: 4mo max</div>
+				</div>
+				<form method="post" enctype="multipart/form-data" id="form-modal-ajout">
+					<input type="file" id="file-img" name="" accept=".jpg, .jpeg, .png" class="valider">
+					<div>
+						<label for="titre-img">Titre</label>
+						<input id="titre-img" type="text" name="title" value=" " class="valider" />
+					</div>
+					<div>
+						<label for="categorie">Category</label>
+						<select id="categorie" name="category" class="valider">
+							<option value=""></option>
+						</select>
+					</div>
+					<input id="submit-form-modal-ajout" type="submit">
+				</form> 
+            </div>
+			<br>
+			<hr style="height: 1px; color: #c6c6c6; background-color: #c6c6c6; width: 100%; border: none;">
+			<br>
+			<div class="div-bas-modal">
+				<button id = "a-valider-photo" categorie="0">&emsp;&emsp;&emsp;&emsp;Valider&emsp;&emsp;&emsp;&emsp;</button>
+			</div>
+        </div>
+
     </aside>
 	<!*******************************>
 	<section id="contact">

@@ -1,7 +1,3 @@
-body,html{
-    margin: 0;
-    padding: 0;
-}
 *{
     box-sizing: border-box;
 }
@@ -19,20 +15,127 @@ body,html{
 .modal-wrapper{
     overflow:auto;
     width: 600px;
-    height: 80%;
-    max-width: calc(100vw-20px);
-    max-height: calc(100vh-20px);
+    height: 98%;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
     padding: 20px;
     background-color: #fff;
 }
-#div-fermer-modal{
+#modal-wrapper2,#modal-wrapper3{
+    display: none;
+}
+.div-fermer-modal{
     display: flex;
-    justify-content:flex-end;
+    justify-content:space-between;
 }
 .js-modal-close{
     border:0px;
     background-color: #fff;
 }
-#title-modal{
+.js-modal-fleche-g{
+    font-weight:bolder;
+    border:0px;
+    background-color: #fff;
+}
+.title-modal{
     text-align: center;
+    height: 3.5em;
+}
+.gallery-modal {
+	display: grid;
+    grid-template-columns: repeat(5, auto);
+	grid-column-gap: 10px;
+	grid-row-gap: 8px;
+    padding:  0em 5em 0em 5em;
+}
+
+.gallery-modal img {
+	width: 100%;
+}
+/*creer depuis le fichier js*/
+.box-img{
+    position: relative;
+}
+.sup-work{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: rgba(255,255,255,.5);
+    border: 1px solid rgba(0,0,0,0.5);
+    color: #000;
+    padding: 10px;
+}
+
+.div-bas-modal {
+    text-align: center;
+    margin: 1.5em;
+}
+
+#a-ajout-photo,#a-valider-photo {
+    text-decoration:none;
+    background-color: #1D6154;
+    color: white;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+#a-supp-gallery{
+    text-decoration: none;
+    color: red;
+}
+
+.gallery-modal2{
+    margin-left: 5em;
+    margin-right: 5em;
+}
+.div-ajout-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 10em;
+    background-color: #e8f1f6;
+}
+.image-form-ajout{
+    width: 30%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+#file-img{
+    display: none;
+}
+
+#form-modal-ajout div {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-modal-ajout div input,select {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+  background-color: #fff;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#form-modal-ajout div label {
+	margin: 2em 0 1em 0;
+}
+#a-form-ajout-photo{
+    text-decoration:none;
+    background-color: #cbd6dc;
+    color: #1D6154;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+#id-div-jpg-png{
+    font-size: 0.7em;
+    color: #86898b;
+}
+#div-ajout-img1{
+    display: none;
+}
+#submit-form-modal-ajout{
+    display: none;
 }
