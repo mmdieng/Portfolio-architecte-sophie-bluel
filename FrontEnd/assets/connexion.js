@@ -21,7 +21,7 @@ btnSubmit.addEventListener("click",async function (event) {
         const rep = await reponse.json();
         window.localStorage.setItem("userId",rep.userId);
         window.localStorage.setItem("token",rep.token);
-        document.location.href='http://127.0.0.1:5500/FrontEnd/#';
+        document.location.href='http://127.0.0.1:5500/';
     }else{
         document.querySelector("#erreur-login").style.display = "block";
         console.log("login ou mot de passe incorrecte.");

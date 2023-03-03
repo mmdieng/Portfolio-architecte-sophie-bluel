@@ -36,7 +36,6 @@ const boutonFiltrers = document.querySelectorAll(".a-filtre");
 let boutonclique = boutonFiltrers[0];
 //verifier si l'utilisateur est logé grace au token
 let token = window.localStorage.getItem("token");
-console.log(token);
 if(token!==null){
     document.querySelector("#div-entete").setAttribute("style","display:block");
     document.querySelector("#nav-filtres").setAttribute("style","display:none");

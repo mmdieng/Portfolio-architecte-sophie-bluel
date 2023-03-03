@@ -1,5 +1,5 @@
 #div-entete ul{
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   display: flex;
@@ -7,8 +7,25 @@
   align-items: center;
   gap: 2em;
   background-color: black;
-  height: 2em;
+  height: 3em;
   width: 100%;
+}
+#div-header{
+  display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+#a-edition{
+  text-decoration:none;
+  color: white;
+
+}
+#a-pub-change{
+    text-decoration:none;
+    background-color: white;
+    color: black;
+    padding: 0.5em;
+    border-radius: 1em;
 }
 #li-logout,.a-modifier,#div-entete{
   display: none;

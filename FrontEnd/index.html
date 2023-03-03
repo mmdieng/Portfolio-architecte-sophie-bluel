@@ -28,20 +28,22 @@
 				<a href="#" id="a-edition" class="a-entete"><i class="fa-regular fa-pen-to-square"></i>&ensp;Mode édition</a>
 			</li>
 			<li>
-				<a href="#" id="a-pub-change" class="a-entete">Publier les changements</a>
+				<a href="#" id="a-pub-change" class="a-entete">&emsp;Publier les changements&emsp;</a>
 			</li>
 		</ul>
 	</div>
-	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
-	<nav>
-		<ul>
-			<li><a href="#id-div-mesprojets" class="a-menu-entete">projets</a></li>
-			<li><a href="#contact" class="a-menu-entete">contact</a></li>
-			<li id="li-login"><a href="connexion.html" class="a-menu-entete">login</a></li>
-			<li id="li-logout"><a href="#" class="a-menu-entete">logout</a></li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
+	<div id="div-header">
+		<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+		<nav>
+			<ul>
+				<li><a href="#id-div-mesprojets" class="a-menu-entete">projets</a></li>
+				<li><a href="#contact" class="a-menu-entete">contact</a></li>
+				<li id="li-login"><a href="connexion.html" class="a-menu-entete">login</a></li>
+				<li id="li-logout"><a href="#" class="a-menu-entete">logout</a></li>
+				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 <main>
 	<section id="introduction">
@@ -95,7 +97,7 @@
         </div>
 
 		<div id="modal-wrapper2" class="modal-wrapper js-modal-stoppropagation">
-            <div class="div-fermer-modal">
+            <div id="div-fermer-modal2" class="div-fermer-modal">
 				<button class="js-modal-fleche-g">&#8592;</button>
                 <button class="js-modal-close">&#10006;</button>
             </div>
@@ -109,8 +111,8 @@
 					<a href="#" id="a-form-ajout-photo">&emsp;&emsp;+Ajouter photo&emsp;&emsp;</a>
 					<div id="id-div-jpg-png">jpg, png: 4mo max</div>
 				</div>
-				<form method="post" enctype="multipart/form-data" id="form-modal-ajout">
-					<input type="file" id="file-img" name="" accept=".jpg, .jpeg, .png" class="valider">
+				<form method="post" id="form-modal-ajout">
+					<input type="file" id="file-img" name="image" accept=".jpg, .jpeg, .png" class="valider">
 					<div>
 						<label for="titre-img">Titre</label>
 						<input id="titre-img" type="text" name="title" value=" " class="valider" />
@@ -121,7 +123,7 @@
 							<option value=""></option>
 						</select>
 					</div>
-					<input id="submit-form-modal-ajout" type="submit">
+					<button id="submit-form-modal-ajout">submit</button>
 				</form> 
             </div>
 			<br>

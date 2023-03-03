@@ -26,8 +26,12 @@
 }
 .div-fermer-modal{
     display: flex;
+    justify-content:flex-end;
+}
+#div-fermer-modal2{
     justify-content:space-between;
 }
+
 .js-modal-close{
     border:0px;
     background-color: #fff;
@@ -52,20 +56,26 @@
 .gallery-modal img {
 	width: 100%;
 }
-/*creer depuis le fichier js*/
+/*crees depuis le fichier js*/
 .box-img{
     position: relative;
 }
+.a-modal-editer{
+    text-decoration:none;
+    color:black;
+}
+.a-modal-supprimer{
+    text-decoration:none;
+    color:white;
+    background-color: #000;
+    padding: 0.4em;
+}
 .sup-work{
     position: absolute;
-    top: 4px;
-    right: 4px;
-    background-color: rgba(255,255,255,.5);
-    border: 1px solid rgba(0,0,0,0.5);
-    color: #000;
-    padding: 10px;
+    top: 1em;
+    right: 1em;
 }
-
+/*****************************/
 .div-bas-modal {
     text-align: center;
     margin: 1.5em;
@@ -116,13 +126,13 @@
 	height: 50px;
 	font-size: 1.2em;
 	border: none;
-  background-color: #fff;
+    background-color: #fff;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 }
 #form-modal-ajout div label {
 	margin: 2em 0 1em 0;
 }
-#a-form-ajout-photo{
+#a-form-ajout-photo {
     text-decoration:none;
     background-color: #cbd6dc;
     color: #1D6154;
