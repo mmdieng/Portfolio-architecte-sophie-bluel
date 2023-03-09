@@ -26,6 +26,7 @@ const closeModal= function(e){
     modal.querySelectorAll(".js-modal-stoppropagation").forEach(close => {
         close.removeEventListener("click",stopPropagation);
     });
+    document.querySelectorAll(".figures").forEach(figure => figure.querySelector("img").setAttribute("style","cursor:default")); 
 }
 
 const stopPropagation = function(e){
@@ -38,6 +39,8 @@ document.querySelector("#i-stop-prop").addEventListener("click",function(e){
 });
 
 const createFigureInModal = function(figure,sectionGalleryModal) {
+    const img = figure.querySelector("img");
+    img.setAttribute("style","cursor:move");
     const a = document.createElement("a");
     a.setAttribute('href',"editer");
     a.setAttribute('id-work',figure.getAttribute("work-id"));
@@ -94,7 +97,6 @@ document.querySelectorAll(".js-modal").forEach(a=>{
     a.addEventListener("click",function(e){
         openModal(e);
         fillModal();
-        //linkEventToModal();
         document.querySelectorAll(".modal-wrapper").forEach(m=>{
             m.style.display="none";
         });

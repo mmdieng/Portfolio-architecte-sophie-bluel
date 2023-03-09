@@ -53,6 +53,7 @@ async function fillGallery(travaux,sectionGallery){
         sectionGallery.appendChild(figure);
     }
 }
+
 const sectionGallery = document.querySelector(".gallery");
 let travaux = await getWorks();
 await fillGallery(travaux,sectionGallery);
