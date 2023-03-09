@@ -51,7 +51,7 @@
   font-size: 1.5vw;
 }
 
-.li-icons a{
+.a-filtre{
   text-decoration:none;
   color: #1D6154;
   padding: 0.2em;
@@ -59,7 +59,7 @@
   border-radius: 1em;
 }
 
-.li-icons a:hover{
+.a-filtre:hover{
   background-color: #1D6154;
   color: white;
 }
@@ -118,21 +118,3 @@
 #id-modif-img2{
   padding-top: 0.6em;
 }
-
-/*.galleryS {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 20px;
-	grid-row-gap: 20px;
-}
-.gallery {}
-  
-.figures{
-  //height: 10em;
-}
-.gallery img {
-	//width: 100%;
-  //object-fit: cover;
-
-}*/

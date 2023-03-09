@@ -13,29 +13,31 @@
 </head>
 <body>
 <header>
-	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
-	<nav>
-		<ul>
-			<li><a href="#id-div-mesprojets" class="a-menu-entete">projets</a></li>
-			<li><a href="#contact" class="a-menu-entete">contact</a></li>
-			<li id="li-login"><a href="connexion.html" class="a-menu-entete">login</a></li>
-			<li id="li-logout"><a href="#" class="a-menu-entete">logout</a></li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
+	<div id="div-header">
+		<h1>Sophie Bluel <span>ARCHITECTE D'INT&Eacute;RIEUR</span></h1>
+		<nav>
+			<ul>
+				<li><a href="#id-div-mesprojets" class="a-menu-entete">projets</a></li>
+				<li><a href="#contact" class="a-menu-entete">contact</a></li>
+				<li id="li-login"><a href="connexion.html" class="a-menu-entete">login</a></li>
+				<li id="li-logout"><a href="#" class="a-menu-entete">logout</a></li>
+				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 <main>
 	<section>
 		<div class="login">
 			<h2>Log In</h2>
-        	<form id="id-form-connexion" method="post" action="">
+        	<form id="id-form-connexion">
 				<div>
                 	<label for="email">E-mail</label>
-                	<input id="email" type="email" name="email" value="" class="" />
+                	<input id="email" type="email" name="email">
 				</div>
 				<div>
                 	<label for="password">Mot de passe</label>
-                	<input id="password" type="password" name="password" value="" class="" />
+                	<input id="password" type="password" name="password">
 				</div>
 				<div>
                 	<p id="erreur-login" class="erreur">Login ou mot de passe incorrecte!</p>
@@ -58,6 +60,6 @@
 		</ul>
 	</nav>
 </footer>
-</body>
 <script type="module" src="./assets/connexion.js"></script>
+</body>
 </html>  

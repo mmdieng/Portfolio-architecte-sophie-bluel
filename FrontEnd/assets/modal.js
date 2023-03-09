@@ -32,6 +32,11 @@ const stopPropagation = function(e){
     e.stopPropagation();
 }
 
+document.querySelector("#i-stop-prop").addEventListener("click",function(e){
+    stopPropagation(e);
+    this.parentElement.click();
+});
+
 const createFigureInModal = function(figure,sectionGalleryModal) {
     const a = document.createElement("a");
     a.setAttribute('href',"editer");
@@ -118,6 +123,7 @@ async function getCategories(){
     const categ = await reponse.json();
     return categ;
 }
+
 
 const  bt= document.getElementById("a-valider-photo");
 const validers=document.querySelectorAll(".valider");
@@ -221,6 +227,9 @@ async function uploadImg(e) {
         },
         body: fd
     });
+    //recuperer le titre avant la reset du formulaire
+    const titre=document.getElementById("titre-img").value;
+    
     const result = await response.json(); 
     if(response.ok){
         alert("Ajout avec succès!")
@@ -234,7 +243,6 @@ async function uploadImg(e) {
         return;
     }
     
-    const titre=document.getElementById("titre-img").value;
     const categorie=document.getElementById("categorie").value;
     const imageElement = document.createElement("img");
     imageElement.src = document.querySelector("#image-loader").src;
@@ -252,6 +260,4 @@ async function uploadImg(e) {
 
     const sectionGalleryModal = document.querySelector(".gallery-modal");
     createFigureInModal(figure,sectionGalleryModal);
-    linkEventToModal //gerer ca
-    //closeModal(e);
 };

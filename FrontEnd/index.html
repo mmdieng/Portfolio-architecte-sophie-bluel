@@ -33,7 +33,7 @@
 		</ul>
 	</div>
 	<div id="div-header">
-		<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+		<h1>Sophie Bluel <span>ARCHITECTE D'INT&Eacute;RIEUR</span></h1>
 		<nav>
 			<ul>
 				<li><a href="#id-div-mesprojets" class="a-menu-entete">projets</a></li>
@@ -52,7 +52,7 @@
 			<div id="id-modif-img"><a href="#" class="a-modifier"><i class="fa-regular fa-pen-to-square"></i>&ensp;Modifier</a></div>
 		</figure>
 		<article>
-			<div id=""><a href="#" class="a-modifier"><i class="fa-regular fa-pen-to-square"></i>&ensp;Modifier</a></div>
+			<div><a href="#" class="a-modifier"><i class="fa-regular fa-pen-to-square"></i>&ensp;Modifier</a></div>
 			<h2>Designer d'espace</h2>
 			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
 			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
@@ -62,21 +62,22 @@
 	<section id="portfolio">
 		<div id="id-div-mesprojets">
 			<h2>Mes Projets</h2>
-			<div id="id-modif-img2"><a href="#modal1" class="a-modifier js-modal"><i class="fa-regular fa-pen-to-square" href="#modal1"></i>&ensp;Modifier</a></div>
+			<div id="id-modif-img2"><a href="#modal1" class="a-modifier js-modal"><i id="i-stop-prop" class="fa-regular fa-pen-to-square"></i>&ensp;Modifier</a></div>
 		</div>
 		<nav id="nav-filtres">
 			<ul class="ul-icons">
-				<li class="li-icons"><a href="#" class = "a-filtre" categorie="0"> &emsp;Tous &emsp;</a></li>
-				<li class="li-icons"><a href="#" class = "a-filtre"  categorie="1">&ensp;Objets&ensp;</a></li>
-				<li class="li-icons"><a href="#" class = "a-filtre"  categorie="2">&nbsp;Appartements&nbsp;</a></li>
-				<li class="li-icons"><a href="#" class = "a-filtre"  categorie="3">Hôtels & restaurants</a></li>
+				<li class="li-icons"><a href="#0" class = "a-filtre"> &emsp;Tous &emsp;</a></li>
+				<!--a remplir dynamiquement-->
+				<!--li class="li-icons"><a href="#1" class = "a-filtre">&ensp;Objets&ensp;</a></li>
+				<li class="li-icons"><a href="#2" class = "a-filtre">&nbsp;Appartements&nbsp;</a></li>
+				<li class="li-icons"><a href="#3" class = "a-filtre">Hôtels & restaurants</a></li-->
 			</ul>
 		</nav>
 		<div class="gallery">
 		</div>
 	</section>
-	<!********************************>
-	<aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="title-modal" style="display: none;">
+	<!--********************************-->
+	<aside id="modal1" class="modal" style="display: none;">
         <div id="modal-wrapper1" class="modal-wrapper js-modal-stoppropagation">
             <div class="div-fermer-modal">
                 <button class="js-modal-close">&#10006;</button>
@@ -89,10 +90,10 @@
 			<hr style="height: 1px; color: #c6c6c6; background-color: #c6c6c6; width: 100%; border: none;">
 			<br>
 			<div class="div-bas-modal">
-				<a href="#" id = "a-ajout-photo" categorie="0"> &emsp;Ajouter une photo &emsp;</a>
+				<a href="#" id = "a-ajout-photo"> &emsp;Ajouter une photo &emsp;</a>
 			</div>
 			<div class="div-bas-modal">
-				<a href="#" id = "a-supp-gallery" categorie="0">Supprimer la gallery</a>
+				<a href="#" id = "a-supp-gallery">Supprimer la gallery</a>
 			</div>
         </div>
 
@@ -115,12 +116,12 @@
 					<input type="file" id="file-img" name="image" accept=".jpg, .jpeg, .png" class="valider">
 					<div>
 						<label for="titre-img">Titre</label>
-						<input id="titre-img" type="text" name="title" value=" " class="valider" />
+						<input id="titre-img" type="text" name="title" value=" " class="valider">
 					</div>
 					<div>
 						<label for="categorie">Category</label>
 						<select id="categorie" name="category" class="valider">
-							<option value=""></option>
+							<!--option value=""></option-->
 						</select>
 					</div>
 					<button id="submit-form-modal-ajout">submit</button>
@@ -130,12 +131,12 @@
 			<hr style="height: 1px; color: #c6c6c6; background-color: #c6c6c6; width: 100%; border: none;">
 			<br>
 			<div class="div-bas-modal">
-				<button id = "a-valider-photo" categorie="0">&emsp;&emsp;&emsp;&emsp;Valider&emsp;&emsp;&emsp;&emsp;</button>
+				<button id = "a-valider-photo">&emsp;&emsp;&emsp;&emsp;Valider&emsp;&emsp;&emsp;&emsp;</button>
 			</div>
         </div>
 
     </aside>
-	<!*******************************>
+	<!--*******************************-->
 	<section id="contact">
 		<h2>Contact</h2>
 		<p>Vous avez un projet ? Discutons-en !</p>
@@ -158,7 +159,7 @@
 		</ul>
 	</nav>
 </footer>
-</body>
 <script type="module" src="./assets/index.js"></script>
 <script src="./assets/modal.js"></script>
+</body>
 </html>
