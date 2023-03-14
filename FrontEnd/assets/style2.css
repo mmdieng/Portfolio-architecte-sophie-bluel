@@ -118,3 +118,9 @@
 #id-modif-img2{
   padding-top: 0.6em;
 }
+@media screen and (max-width:568px) {
+  .ul-icons{
+    font-size: 0.8vw;
+  }
+
+}
